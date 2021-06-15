@@ -41,3 +41,4 @@ Azure Database for PostgreSQL - Supports Clusters and advances setup settings
 DataBricks - Its like Athena + Glue ETL + QuickSight in one.
 
 Azure Functions - AWS Lambda Functions, but can be directly invoked through http call
+shit
