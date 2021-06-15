@@ -1,0 +1,43 @@
+Core Azure Architectural components
+===================================
+Azure Regions: 60+ regions. China region, US Govr Region are not accessible as others are
+Availabilty-Zones: Are datacentres in a region. Same as AWS. Multiple AZs in a region
+Azure Paired Regions: Regions have pairs. Pairs have low latency. So deploy app on one region and keep its backup etc on its paired region
+Resource Group: Logical grouping of resource , or example resource group for project A and project B etc. or dev, test, prod etc, to keep resources separate.
+Subscription: Billing Unit. Seperate out the bill of your clients by creating separate subscription for each client
+Management Groups: a group of subscription/s. For example IT management group can have multiple subscriptions. Using it Management can enfornce policies on subscription.  
+Azure Resource Manager API - manages your cloud. Interact with it using Azure cli, portal, sdks etc.
+Resources - Same as AWS resources
+
+free aws account - first month you have 200 usd credit. you can spend on small VMs, Smalls storage etc.
+
+Virtual Machines - IaaS - like EC2 instance
+App Services - PaaS (probably like ElasticBeanstalk)
+ACI - Azure Container Instance - Single instance
+AKS - Azure Kubernetes Service
+
+Virtual Network - Similiar to VPC
+Virtual Private Network - Similar to AWS VPN - conect to network from your network using a VPN profile
+Express Route - like AWS direct connect
+
+DDoS - Basic DDOS is there but you can purchase advance DDoS service as well
+Azure Firewal - application level firewall? like AWS WAF
+Network Security - like AWS NACL?
+Private Link - ?
+LoadBalancer - Like AWS LoadBalancer
+Application Gateway - Same as Loadbalancer , but also has a firewall service (like AWS LoadBalancer + AWS WAF - in one service)
+CDN
+Azure Front - LoadBalancer + WAF + CDN
+
+A storage Account - is like an S3 bucket
+Storage Account Containers - are like folders inside S3
+Storage Account is accessed to upload/download data through Access Keys and https url of the container
+
+CosmosDB - is like DynamoDB but allows SQL like queries to run
+Azure SQL database - Software as a service. No instances, just the endpoints you get
+Azure Database for MySQL - simple
+Azure Database for PostgreSQL - Supports Clusters and advances setup settings
+
+DataBricks - Its like Athena + Glue ETL + QuickSight in one.
+
+Azure Functions - AWS Lambda Functions, but can be directly invoked through http call
