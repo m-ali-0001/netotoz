@@ -4,7 +4,9 @@
 # HOW TO USE: 
 # 1. Create a file. Put all usernames in it. One username per line.
 # 2. Run the script and pass your file as an argument. e.g
-#    ./create-linux-users.sh [your_file] 
+#    ./create-users.sh [your_file] 
+# 
+# NOTE: The script was tested on Ubuntu 18 - works fine!
 
 if [ -z "$1" ]
   then
@@ -19,7 +21,7 @@ while IFS= read -r line;
   do
     username=$line
     groupname=$line
-    password="P3rmission2Acce33@otoz"
+    password="2Acce33@otoz"
     if [ -z "$username" ]
       then
         echo "\$username is empty"
